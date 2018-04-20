@@ -1,0 +1,20 @@
+<!-- Liaison de propriété -->
+<img [src]='image'>  
+<!-- Liaison d'évènements -->
+<button (click)='Afficher()'>Afficher / Cacher</button>
+<p>{{paragraphe}}</p>
+
+<!-- Double liaison -->
+
+<input [(ngModel)]="paragraphe2">
+<p>{{paragraphe2}}</p>
+
+<!-- Les deux paragraphes p1 et p2 + status -->
+<button (click)='Afficher2()'>P1 ou P2</button>
+
+<p>{{p1}}</p>
+<p>{{p2}}</p>
+
+<ul>
+  <li *ngFor="let text of texts">{{text}}</li>
+</ul>
